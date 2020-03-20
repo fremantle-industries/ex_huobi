@@ -9,7 +9,14 @@ defmodule ExHuobi.MixProject do
       package: package(),
       start_permanent: Mix.env() == :prod,
       description: description(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ]
     ]
   end
 
@@ -21,10 +28,17 @@ defmodule ExHuobi.MixProject do
 
   defp deps do
     [
+      {:httpoison, "~> 1.0"},
+      {:jason, "~> 1.1"},
+      {:mapail, "~> 1.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
-      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
-      {:ex_unit_notifier, "~> 0.1", only: :test}
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
+      {:mock, "~> 0.3", only: :test},
+      {:exvcr, "~> 0.10", only: [:dev, :test]},
+      {:ex_unit_notifier, "~> 0.1", only: :test},
+      {:excoveralls, "~> 0.10", only: :test},
+      {:websockex, "~> 0.4"}
     ]
   end
 
