@@ -7,5 +7,5 @@ defmodule ExHuobi.Futures.HTTPClient do
 
   def origin, do: rest_protocol() <> domain()
 
-  def api_path, do: Application.get_env(:ex_huobi, :api_path, "/api/v1")
+  def api_path, do: Application.get_env(:ex_huobi, :futures_api_path, "/api/v1")
 end

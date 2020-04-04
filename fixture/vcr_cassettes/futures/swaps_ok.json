@@ -1,0 +1,39 @@
+[
+  {
+    "request": {
+      "body": "{}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.hbdm.com/swap-api/v1/swap_contract_info"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":\"ok\",\"data\":[{\"symbol\":\"BTC\",\"contract_code\":\"BTC-USD\",\"contract_size\":100.000000000000000000,\"price_tick\":0.100000000000000000,\"create_date\":\"20200325\",\"contract_status\":1,\"settlement_date\":\"1586059200000\"},{\"symbol\":\"ETH\",\"contract_code\":\"ETH-USD\",\"contract_size\":10.000000000000000000,\"price_tick\":0.010000000000000000,\"create_date\":\"20200403\",\"contract_status\":1,\"settlement_date\":\"1586059200000\"}],\"ts\":1586032858043}",
+      "headers": {
+        "Date": "Sat, 04 Apr 2020 20:40:58 GMT",
+        "Content-Type": "text/plain;charset=UTF-8",
+        "Content-Length": "432",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d1915ce44394be3e14f6b1e4635ebb9df1586032857; expires=Mon, 04-May-20 20:40:57 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax",
+        "Pragma": "no-cache",
+        "Cache-Control": "no-cache, no-store",
+        "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "ReqId": "5f7031a466ed45ff843c4492fe4b91f4",
+        "ratelimit-remaining": "59",
+        "ratelimit-reset": "1586032861043",
+        "ratelimit-interval": "3000",
+        "ratelimit-limit": "60",
+        "CF-Cache-Status": "DYNAMIC",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Server": "cloudflare",
+        "CF-RAY": "57edd8f09894fda5-PDX"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

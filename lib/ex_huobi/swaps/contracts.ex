@@ -1,15 +1,15 @@
-defmodule ExHuobi.Futures.Contracts do
-  alias ExHuobi.Futures
+defmodule ExHuobi.Swaps.Contracts do
+  alias ExHuobi.Swaps
 
-  @type contract :: Futures.Contract.t()
+  @type contract :: Swaps.Contract.t()
   @type error_reason :: term
 
-  @path "/contract_contract_info"
+  @path "/swap_contract_info"
 
   @spec get :: {:ok, [contract]} | {:error, error_reason}
   def get do
     @path
-    |> Futures.HTTPClient.non_auth_get()
+    |> Swaps.HTTPClient.non_auth_get()
     |> parse_response()
   end
 
@@ -27,7 +27,7 @@ defmodule ExHuobi.Futures.Contracts do
   defp to_struct(data) do
     data
     |> Mapail.map_to_struct(
-      Futures.Contract,
+      Swaps.Contract,
       transformations: [:snake_case]
     )
   end
