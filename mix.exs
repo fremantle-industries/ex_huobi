@@ -34,7 +34,7 @@ defmodule ExHuobi.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
-      {:ex_unit_notifier, "~> 0.1", only: :test},
+      {:ex_unit_notifier, "~> 1.0", only: :test},
       {:mock, "~> 0.3", only: :test},
       {:exvcr, "~> 0.10", only: [:dev, :test]},
       {:excoveralls, "~> 0.10", only: :test}
