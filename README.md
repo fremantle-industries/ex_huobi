@@ -1,4 +1,6 @@
 # ExHuobi
+[![Build Status](https://github.com/fremantle-capital/ex_huobi/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-capital/ex_huobi/actions?query=workflow%3Atest)
+[![hex.pm version](https://img.shields.io/hexpm/v/ex_huobi.svg?style=flat)](https://hex.pm/packages/ex_huobi)
 
 Huobi API Client for Elixir
 
